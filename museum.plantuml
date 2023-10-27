@@ -1,0 +1,40 @@
+@startuml
+
+class Museum {
+    - name: String
+    - address: String
+    + getExhibits(): List<Exhibit>
+    + getStaffMembers(): List<Staff>
+}
+
+class Exhibit {
+    - title: String
+    - description: String
+    - date: Date
+    + getInfo(): String
+}
+
+class Staff {
+    - name: String
+    - role: String
+    + getRole(): String
+}
+
+class Artist {
+    - name: String
+    - biography: String
+    + getArtworks(): List<Exhibit>
+}
+
+class Visitor {
+    - name: String
+    - visitDate: Date
+    + visit(exhibit: Exhibit)
+}
+
+Museum "1" -> "0..*" Exhibit : Contains
+Museum "1" -> "0..*" Staff : Employs
+Exhibit "0..*" <-> "*..*" Artist : Created by
+Visitor "1" -- "0..*" Exhibit : Visits
+
+@enduml
