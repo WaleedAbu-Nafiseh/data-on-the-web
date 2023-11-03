@@ -1,0 +1,6 @@
+id,museumCode,artist_id,title,description,date
+EX001,MUS01,ART01,"The Enigma of Arrival","A painting depicting the mysteries of the journey.",2023-01-15
+EX002,MUS02,ART02,"Shadows of Time","An abstract work that plays with light and darkness.",2023-02-20
+EX003,MUS03,ART03,"Whispers of the Ancient World","A collection of pieces reflecting ancient history.",2023-03-18
+EX004,MUS04,ART04,"Echoes of the Forest","Artwork inspired by the natural beauty of woodlands.",2023-04-25
+EX005,MUS05,ART05,"Dance of the Tides","A seascape showing the dynamic movement of the ocean.",2023-05-30

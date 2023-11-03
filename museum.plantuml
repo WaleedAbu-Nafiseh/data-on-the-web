@@ -1,6 +1,7 @@
 @startuml
 
 class Museum {
+    - code: String
     - name: String
     - address: String
     + getExhibits(): List<Exhibit>
@@ -8,6 +9,9 @@ class Museum {
 }
 
 class Exhibit {
+    - id: String
+    - museumCode: String
+    - artist_id: String
     - title: String
     - description: String
     - date: Date
@@ -16,16 +20,24 @@ class Exhibit {
 
 class Staff {
     - name: String
+    - museumCode: String
     - role: String
     + getRole(): String
 }
 
 class Artist {
+    - id: String
     - name: String
     - biography: String
-    + getArtworks(): List<Exhibit>
+    + getArtworks(): List<ArtWork>
 }
 
+class ArtWork {
+    - name: String
+    - year: String
+    - artist_id: String
+    - exhibit_id: String
+}
 class Visitor {
     - name: String
     - visitDate: Date
