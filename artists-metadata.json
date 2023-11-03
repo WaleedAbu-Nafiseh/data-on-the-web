@@ -1,0 +1,27 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "artists.csv",
+    "tableSchema": {
+      "columns": [
+        {
+          "name": "id",
+          "titles": "ID",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/identifier"
+        },
+        {
+          "name": "name",
+          "titles": "Name",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/name"
+        },
+        {
+          "name": "biography",
+          "titles": "Biography",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/description"
+        }
+      ]
+    }
+  }
+  

@@ -1,0 +1,33 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "artworks.csv",
+    "tableSchema": {
+      "columns": [
+        {
+          "name": "name",
+          "titles": "Name",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/name"
+        },
+        {
+          "name": "year",
+          "titles": "Year",
+          "datatype": "gYear",
+          "propertyUrl": "http://schema.org/dateCreated"
+        },
+        {
+          "name": "artist_id",
+          "titles": "Artist ID",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/identifier"
+        },
+        {
+          "name": "exhibit_id",
+          "titles": "Exhibit ID",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/identifier"
+        }
+      ]
+    }
+  }
+  

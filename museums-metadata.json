@@ -1,0 +1,27 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "museums.csv",
+    "tableSchema": {
+      "columns": [
+        {
+          "name": "code",
+          "titles": "Code",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/identifier"
+        },
+        {
+          "name": "name",
+          "titles": "Name",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/name"
+        },
+        {
+          "name": "address",
+          "titles": "Address",
+          "datatype": "string",
+          "propertyUrl": "http://schema.org/address"
+        }
+      ]
+    }
+  }
+  
